@@ -12,7 +12,7 @@ describe('listItem component', () => {
   });
 
   //TODO
-  //most of below code are suedo code. 
+  //most of below code are pseudo code
   //just show my basic idea how to implete unit tests
   it('should delete selected todo task from existing list', () => {
     const testTodoList = [

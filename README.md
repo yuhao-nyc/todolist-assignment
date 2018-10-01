@@ -14,6 +14,10 @@ npm run unit
 # build for production with minification
 npm run build
 ```
+Userflow:
+1. when you first land on the app you need to sign up with a username and password
+2. then the app promt you to login page. user the same username and password to login
+3. now you see the whole application!
 
 Notes:
 1. there's some issue with the unit testing framework in this repo. so i started some pseudo code unit test for now. it still needs changes and improvements

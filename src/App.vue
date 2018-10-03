@@ -2,14 +2,14 @@
     <div class="container todolist-container">
 
         <transition name="component-fade" mode="out-in">
-            <authBox></authBox>
+            <AuthBox></AuthBox>
         </transition>
 
         <transition name="component-fade" mode="out-in">
             <div v-if="authedStore">
                 <h2 data-test="title">Todo List</h2>
                 <div class="list-group">
-                    <list></list>
+                    <List></List>
                 </div>
             </div>
         </transition>
@@ -18,14 +18,14 @@
 </template>
 
 <script>
-import list from './components/list.vue'
-import authBox from './components/authBox.vue'
+import List from './components/List.vue'
+import AuthBox from './components/AuthBox.vue'
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
     components: { 
-        list,
-        authBox 
+        List,
+        AuthBox 
     },
     computed: {
         ...mapGetters([

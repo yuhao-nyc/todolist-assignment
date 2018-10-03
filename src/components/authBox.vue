@@ -1,6 +1,6 @@
 <template>
   <div v-if="!authedStore">
-
+    
     <div v-if="!signUpBox">
       <h2 class="mb-4">Log In</h2>
 
@@ -93,7 +93,7 @@ export default {
       password: null,
       errorMessage: false,
       signUpBox: true,
-      signUpErrormessage: false
+      signUpErrormessage: false    
     }
   },
   methods: {

@@ -50,7 +50,12 @@
 <script>
 /* eslint-disable */
 export default {
-  props: ['todo'],
+  props: {
+    todo: {
+      type: Object,
+      required: true
+    }
+  },
 
   data() {
     return {

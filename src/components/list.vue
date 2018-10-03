@@ -58,11 +58,11 @@
             v-bind:key="index"
             data-test="todoList"
         >
-          <listItem
+          <ListItem
             :todo = todo
             v-on:deleteTodo="deleteTodo"
           >
-          </listItem>
+          </ListItem>
         </button>
       </transition-group>
     </div>
@@ -76,11 +76,11 @@
             v-bind:key="index"
             data-test="todoList"
         >
-          <listItem
+          <ListItem
             :todo = todo
             v-on:deleteTodo="deleteTodo"
           >
-          </listItem>
+          </ListItem>
         </button>
       </transition-group>
     </div>
@@ -89,11 +89,11 @@
 </template>
 <script>
 /* eslint-disable */
-import listItem from './listItem.vue'
+import ListItem from './ListItem.vue'
 
 export default {
   components: {
-    listItem
+    ListItem
   },
   computed: {
     completedList() {
